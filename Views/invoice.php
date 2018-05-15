@@ -31,7 +31,6 @@
 </style>
 </head>
 <body>
-  <div class="container">
     <div class="row">
 
       <div class="col m12">
@@ -222,7 +221,6 @@
                     <th colspan="3" class="center-align">Resumen de la Factura</th>
                   </tr>
                 </thead>
-
                 <tbody>
                   <tr>
                     <td>Sub Total</td>
@@ -274,39 +272,39 @@
     <div class="row">
       <form class="col s12">
         <div class="row">
-         <div class="input-field col s8">
+         <div class="input-field col s12 m8">
           <input id="remitente_name" type="text" class="validate" required>
           <label for="remitente_name">Nombre del remitente</label>
         </div>
-        <div class="input-field col s4">
+        <div class="input-field col s12 m4">
           <input id="remitente_pais" type="text" class="validate">
           <label for="remitente_pais">País</label>
         </div>
      
-        <div class="input-field col s6">
+        <div class="input-field col s12 m6">
           <input id="remitente_tax" type="text" class="validate">
           <label for="remitente_tax">PAN TAX Número de Registro</label>
         </div>
-        <div class="input-field col s6">
+        <div class="input-field col s12 m6">
           <input id="remitente_email" type="email" class="validate">
           <label for="remitente_email">Email</label>
           <span class="helper-text" data-error="Email no válido" data-success="Email válido"></span>
         </div>
      
-        <div class="input-field col s6">
+        <div class="input-field col s12 m6">
           <input id="remitente_dir1" type="text" class="validate" required>
           <label for="remitente_dir1">Dirección Línea 1 (requerido)</label>
         </div>
-        <div class="input-field col s6">
+        <div class="input-field col s12 m6">
           <input id="remitente_dir2" type="text" class="validate">
           <label for="remitente_dir2">Dirección Línea 1</label>
         </div>
      
-       <div class="input-field col s6">
+       <div class="input-field col s12 m6">
         <input id="remitente_telefono" type="tel" class="validate">
         <label for="remitente_telefono">Teléfono</label>
       </div>
-      <div class="input-field col s6">
+      <div class="input-field col s12 m6">
         <input id="remitente_web" type="text" class="validate">
         <label for="remitente_web">Sitio WEB</label>
       </div>
@@ -325,44 +323,44 @@
     <div class="row">
       <form class="col s12">
         <div class="row">
-         <div class="input-field col s6">
+         <div class="input-field col s12 m6">
           <input id="cliente_name" type="text" class="validate" required>
           <label for="cliente_name">Nombre del Cliente (requerido)</label>
         </div>
-        <div class="input-field col s6">
+        <div class="input-field col s12 m6">
           <input id="cliente_apellido" type="text" class="validate" required>
           <label for="cliente_apellido">Apellido del Cliente (requerido)</label>
         </div>
      
         
-        <div class="input-field col s8">
+        <div class="input-field col s12 m8">
           <input id="cliente_email" type="email" class="validate">
           <label for="cliente_email">Email</label>
           <span class="helper-text" data-error="Email no válido" data-success="Email válido"></span>
         </div>
 
-        <div class="input-field col s4">
+        <div class="input-field col s12 m4">
           <input id="cliente_pais" type="text" class="validate">
           <label for="cliente_pais">País</label>
         </div>
      
      <div class="col s12"><hr></div>
 
-        <div class="input-field col s6">
+        <div class="input-field col s12 m6">
           <input id="cliente_dir1" type="text" class="validate" required>
           <label for="cliente_dir1">Dirección Línea 1 (requerido)</label>
         </div>
-        <div class="input-field col s6">
+        <div class="input-field col s12 m6">
           <input id="cliente_dir2" type="text" class="validate">
           <label for="cliente_dir2">Dirección Línea 1</label>
         </div>
 
-        <div class="input-field col s6">
+        <div class="input-field col s12 m6">
         <input id="cliente_comp" type="text" class="validate">
         <label for="cliente_comp">Nombre de la Compañía</label>
       </div>
      
-       <div class="input-field col s6">
+       <div class="input-field col s12 m6">
         <input id="cliente_telefono" type="tel" class="validate">
         <label for="cliente_telefono">Teléfono</label>
       </div>
@@ -378,12 +376,10 @@
 
 
 
-</div>  
 
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
-<script src="../Include/js/tabla.js"></script>
 <script type="text/javascript">
   $(document).ready(function(){
     $('.datepicker').datepicker();
