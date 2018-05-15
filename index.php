@@ -1,39 +1,1 @@
-<?php
-define('BASEPATH', true);
-
-require 'system/config.php';
-require 'system/core/autoload.php';
-
-/**
- * Nivel de errores notificados
- */
-error_reporting(ERROR_REPORTING_LEVEL);
-
-/**
- * Inicializa Router y detección de valores de la URI
- */
-$router = new Router();
-
-$controller = $router->getController();
-$method = $router->getMethod();
-$param = $router->getParam();
-
-/**
- * Validaciones e inclusión del controlador y el metodo 
- */
-if(!CoreHelper::validateController($controller))
-  $controller = 'ErrorPage';
-
-require PATH_CONTROLLERS . "{$controller}/{$controller}Controller.php";
-
-$controller .= 'Controller';
-
-if(!CoreHelper::validateMethodController($controller, $method))
-  $method = 'exec';
-
-/**
- * Ejecución final del controlador, método y parámetro obtenido por URI
- */
-$controller = new $controller;
-
-$controller->$method($param);
+  <!DOCTYPE html>  <html>    <head>      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">      <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>    </head>    <body>      <script type="text/javascript" src="js/materialize.min.js"></script>    </body>  </html>
