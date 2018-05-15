@@ -1,4 +1,10 @@
 <html>
+  <div class="row">
+	<div class="col s12 m6">
+		<h3>Mis Datos</h3>
+	</div>
+</div>
+
 <div class="row">
 	<hr>
 	<div class="col s12 m6 l4">
