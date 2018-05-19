@@ -32,9 +32,6 @@ tr{
     </div>
   </div>
 
-  <div id="fact">
-  </div>
-
   <div class="row">
     <div class="col s12">
     <hr>

@@ -26,239 +26,212 @@ tr{
     <div class="col hide-on-med-and-down m6">
       <h3 id="titulo">Crear Factura</h3>
     </div>
-    <div class="col s12 m6">
+    <div class="col s12 m2">
+      <h3><a class="waves-effect waves-light btn-small cyan darken-2">Guardar</a></h3>
+    </div>
+    <div class="col s12 m2">
+      <h3><a class="waves-effect waves-light btn-small cyan darken-4">Descargar</a></h3>
+    </div>
+    <div class="col s12 m2">
       <h3>  <a class="btn-floating btn-large waves-effect waves-light teal accent-3 right" title="Nueva Factura" id="crearfactura"><i class="material-icons" id="list">list</i></a>
       </h3>
     </div>
   </div>
 
-<div class="row">
+  <div class="row">
 
-  <div class="col m12">
     <div class="col m12">
-      <hr>
+      <div class="col m12">
+        <hr>
 
-      <div class="col m6 push-m6">
-      </div>
-      <div class="col m6 pull-m6"> <!-- Logo -->
-        <div class="row blue-text">
-          <div class="col m2">
-            <span class="mdi mdi-cloud-upload mdi-36px right"></span> 
-          </div>
-          <div class="col m10">
-            <div class="row">
-              <div class="col m12">Arrastre su logotipo aquí
-              </div> 
-              <div class="col m12"> Seleccione logo
-              </div> 
-            </div>
-          </div>
+        <div class="col m6 push-m6">
         </div>
-      </div> <!-- Fin Logo -->
-
-
-      <div class="col m6">
-        <div class="row">
-          <a class="modal-trigger" href="#addRemitente">
-            <div class="col m10 push-m2">
-            </div>
-            <div class="col m2 center-align pull-m10 grey-text darken-3">De</div>
+        <div class="col m6 pull-m6"> <!-- Logo -->
+          <div class="row blue-text">
             <div class="col m2">
-              <span class="mdi mdi-home-outline mdi-36px right ver1"></span> 
+              <span class="mdi mdi-cloud-upload mdi-36px right"></span> 
             </div>
             <div class="col m10">
               <div class="row">
-                <div class="col m12 ver1">Agregar Remitente
+                <div class="col m12">Arrastre su logotipo aquí
                 </div> 
-                <div class="col m12 grey-text lighten-2">
-                  <span class="a ver1">(o establecer el valor por defecto en mis detalles)</span>
+                <div class="col m12"> Seleccione logo
                 </div> 
-                <div class="col m12 grey-text lighten-2">
-                  <ul>
-                    <li class="remitente_name"></li>
-                    <li class="remitente_pais"></li>
-                    <li class="remitente_tax"></li>
-                    <li class="remitente_email"></li>
-                    <li class="remitente_dir1"></li>
-                    <li class="remitente_dir2"></li>
-                    <li class="remitente_telefono"></li>
-                    <li class="remitente_web"></li>
-                  </ul>
-                </div>
               </div>
             </div>
-          </a>
-        </div>
-      </div>
-
-
-
-      <div class="col m6">
-        <div class="row">
-          <a class="modal-trigger" href="#addCliente">
-            <div class="col m10 push-m2">
-            </div>
-            <div class="col m2 center-align pull-m10 grey-text darken-3">Para</div>
-            <div class="col m2">
-              <span class="mdi mdi-account-plus mdi-36px right ver2"></span> 
-            </div>
-            <div class="col m10 flow-text">
-              <span class="opcion ver2">Agregar Cliente</span>
-            </div>
-            <div class="col m12 grey-text lighten-2 right-align">
-              <ul>
-                <li class="cliente_name"></li>
-                <li class="cliente_apellido"></li>
-                <li class="cliente_email"></li>
-                <li class="cliente_pais"></li>
-                <li class="cliente_dir1"></li>
-                <li class="cliente_dir2"></li>
-                <li class="cliente_comp"></li>
-                <li class="cliente_telefono"></li>
-              </ul>
-            </div>
-          </a>
-        </div>
-      </div>
-
-    </div>
-
-
-    <div class="row">
-
-      <div class="col m6 center-align grey-text darken-3">
-        <section>
-          Factura No:
-          <div class="input-field inline">
-            <input id="ninvoice_inline" type="text" value="001">
           </div>
-        </section>
-        <section>
-          Fecha Factura:
-          <div class="input-field inline">
-            <input id="finvoice_inline" type="text" class="datepicker">
-          </div>
-        </section>
-
-      </div>
+        </div> <!-- Fin Logo -->
 
 
-      <div class="col m6 center-align grey-text darken-3">
-        Plazo:
-        <div class="input-field inline">
-          <input id="pinvoice_inline" type="text" class="datepicker">
-        </div>
-      </div>
-
-    </div>
-
-
-
-    <div class="row">
-
-      <div class="col m12 ">
-
-
-
-        <form action="" method="post" oninput="resultado.value=parseInt(valor1.value)*parseInt(valor2.value)">
-          <table id="lista_productos" class="centered highlight">
-
-
-            <thead>
-              <tr>
-                <th style="width: 35%;">Item</th>
-                <th>HRS/CAN</th>
-                <th>Precio</th>
-                <th>Impuesto</th>
-                <th>Sub Total</th>
-              </tr>
-            </thead>
-
-            <tbody>
-              <tr>
-                <td><input placeholder="Descripción" id="" type="text"></td>
-                <td><input type="number" id="valor1" value="0"></td>
-                <td><input type="number" id="valor2" value="0"></td>
-                <td>
-                  <div class="input-field">
-                    <select>
-                      <option value="">d</option>
-                      <option value="1">Option 1</option>
-                      <option value="2">Option 2</option>
-                      <option value="3">Option 3</option>
-                    </select>
+        <div class="col m6">
+          <div class="row">
+            <a class="modal-trigger" href="#addRemitente">
+              <div class="col m10 push-m2">
+              </div>
+              <div class="col m2 center-align pull-m10 grey-text darken-3">De</div>
+              <div class="col m2">
+                <span class="mdi mdi-home-outline mdi-36px right ver1"></span> 
+              </div>
+              <div class="col m10">
+                <div class="row">
+                  <div class="col m12 ver1">Agregar Remitente
+                  </div> 
+                  <div class="col m12 grey-text lighten-2">
+                    <span class="a ver1">(o establecer el valor por defecto en mis detalles)</span>
+                  </div> 
+                  <div class="col m12 grey-text lighten-2">
+                    <ul>
+                      <li class="remitente_name"></li>
+                      <li class="remitente_pais"></li>
+                      <li class="remitente_tax"></li>
+                      <li class="remitente_email"></li>
+                      <li class="remitente_dir1"></li>
+                      <li class="remitente_dir2"></li>
+                      <li class="remitente_telefono"></li>
+                      <li class="remitente_web"></li>
+                    </ul>
                   </div>
-                </td>
-                <td><output name="resultado"></output></td> 
-
-                <td>
-                 <div class="inline">
-                  <!--<a class="mdi mdi-pencil teal-text darken-2 mdi-18px" title="Editar Item"></a>-->
-                  <a class="mdi mdi-delete red-text darken-1 mdi-18px button_eliminar_producto mdi-24px" title="Eliminar Item"></a>
                 </div>
-              </td>
-            </tr>
-          </tbody>
-          <tfoot>
-            <tr>
-              <td>
-                <a class="btn-floating btn-small waves-effect waves-light  teal accent-3"><i class="material-icons button_agregar_producto" title="Agregar nuevo Item">add</i></a>
-              </td>
-              <td colspan="4">  </td>
-            </tr>
-          </tfoot>
-        </table>
-      </form>
-    </div>
+              </div>
+            </a>
+          </div>
+        </div>
 
-    <div class="col m6 offset-m6">
-     <div class="col m12">
-      <div class="card horizontal">
-        <div class="card-stacked">
-          <div class="card-content">
-           <table class="highlight">
-            <thead>
-              <tr>
-                <th colspan="3" class="center-align">Resumen de la Factura</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>Sub Total</td>
-                <td>-</td>
-              </tr>
-              <tr>
-                <td>Impuesto</td>
-                <td>-</td>
-              </tr>
-              <tr>
-                <td>Total</td>
-                <td>-</td>
-              </tr>
-            </tbody>
-          </table>
+
+
+        <div class="col m6">
+          <div class="row">
+            <a class="modal-trigger" href="#addCliente">
+              <div class="col m10 push-m2">
+              </div>
+              <div class="col m2 center-align pull-m10 grey-text darken-3">Para</div>
+              <div class="col m2">
+                <span class="mdi mdi-account-plus mdi-36px right ver2"></span> 
+              </div>
+              <div class="col m10 flow-text">
+                <span class="opcion ver2">Agregar Cliente</span>
+              </div>
+              <div class="col m12 grey-text lighten-2 right-align">
+                <ul>
+                  <li class="cliente_name"></li>
+                  <li class="cliente_apellido"></li>
+                  <li class="cliente_email"></li>
+                  <li class="cliente_pais"></li>
+                  <li class="cliente_dir1"></li>
+                  <li class="cliente_dir2"></li>
+                  <li class="cliente_comp"></li>
+                  <li class="cliente_telefono"></li>
+                </ul>
+              </div>
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+
+      <div class="row">
+
+        <div class="col m6 center-align grey-text darken-3">
+          <section>
+            Factura No:
+            <div class="input-field inline">
+              <input id="ninvoice_inline" type="text" value="001">
+            </div>
+          </section>
+          <section>
+            Fecha Factura:
+            <div class="input-field inline">
+              <input id="finvoice_inline" type="text" class="datepicker">
+            </div>
+          </section>
+
+        </div>
+
+
+        <div class="col m6 center-align grey-text darken-3">
+          Plazo:
+          <div class="input-field inline">
+            <input id="pinvoice_inline" type="text" class="datepicker">
+          </div>
+        </div>
+
+      </div>
+
+
+
+      <div class="row">
+
+        <div class="col m12 ">
+
+          <table id="items">
+    
+      <tr class="text-center">
+          <th>Descripción</th>
+          <th>Precio</th>
+          <th>Hrs/Can</th>
+          <th>Tasa de Impuesto (TI)</th>
+          <th>Sub Total</th>
+          <th>TI</th>
+      </tr>
+      
+      <tr class="item-row">
+          <td class="description"><input placeholder="Descripción" id="" type="text" name="descripcion[]"></td>
+          <td><input type="text" name="cantidad[]" class="cost" value=""></td>
+          <td><input type="number" name="cantidad[]" class="qty"></td>
+          <td><input type="text" name="cantidad[]" class="tax"></td>
+          <td><span class="price"></span></td>
+          <td><span class="ctax"></span></td>
+      </tr>
+      
+      <tr id="hiderow">
+        <td colspan="5"> <a href="javascript:;" class="btn-floating btn-small waves-effect waves-light  teal accent-3" id="addrow"><i class="material-icons button_agregar_producto" title="Agregar nuevo Item">add</i></a></td>
+      </tr>
+      
+      <tr>
+          <td colspan="3" class="blank"> </td>
+          <td class="total-line">Subtotal</td>
+          <td class="total-value"><div id="subtotal"></div></td>
+      </tr>
+      <tr>
+
+          <td colspan="3" class="blank"> </td>
+          <td class="total-line">Total Impuestos</td>
+          <td class="total-value"><div id="sumtax"></div></td>
+      </tr>
+      <tr>
+
+          <td colspan="3" class="blank"> </td>
+          <td class="total-line">Total</td>
+          <td class="total-value"><div id="total"></div></td>
+      </tr>
+     
+    
+    </table>
+     
+  
+
+
+
+
+          </div>
         </div>
       </div>
     </div>
   </div>
 
+  <div class="col m12">
 
-
-
-</div>
-
-<div class="col m12">
-
- <div class="row">
-  <form class="col s12">
-    <div class="row">
-      <div class="input-field col s12">
-        <textarea id="textarea1" class="materialize-textarea"></textarea>
-        <label for="textarea1">Términos de la Factura</label>
+   <div class="row">
+    <form class="col s12">
+      <div class="row">
+        <div class="input-field col s12">
+          <textarea id="textarea1" class="materialize-textarea"></textarea>
+          <label for="textarea1">Términos de la Factura</label>
+        </div>
       </div>
-    </div>
-  </form>
-</div>
+    </form>
+  </div>
 
 </div>
 
@@ -378,9 +351,23 @@ tr{
 
 
 
+<div id="editarTasas" class="modal modal-fixed-footer">
+  <div class="modal-content">
+    <div class="row">
+      <div class="col m12 center">
+        <div id="mostrarTasas"></div>
+      </div>
+    </div>
+  </div>
+  <div class="modal-footer">
+    <a href="#!" class="modal-close waves-effect waves-green btn-flat guardarTasas">Guardar Cambios</a>
+  </div>
+</div>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+<script src="../Include/js/tablalista.js"></script>
+<script src="../Include/js/tabla.js"></script>
 <script type="text/javascript">
   $(document).ready(function(){
     $('.datepicker').datepicker();
@@ -442,8 +429,12 @@ tr{
       });
     });
 
+    $('#lista_productos').on('click', '.button_eliminar_producto', function(){    
+    $(this).parents('tr').eq(0).remove();
   });
-  
+
+  });
+
 </script>
 </body>
 </html>
